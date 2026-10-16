@@ -6,3 +6,4 @@ database.sql: define the initial database tables.
 clean_data.py: identify duplicates, missing values, invalid timestamps, and inconsistent records.
 requirements.txt: list the Python packages.
 data/README.md: explain where data belongs without committing raw research data.
+.env.example: show required database configuration without real credentials.
