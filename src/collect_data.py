@@ -65,5 +65,5 @@ def collect_posts(max_pages=3, page_size=25):
     print(f"\nSaved {len(records)} unique posts to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    collect_posts()
+    collect_posts(max_pages=20, page_size=25)
 
