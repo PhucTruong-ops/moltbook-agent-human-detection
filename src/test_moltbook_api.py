@@ -22,11 +22,24 @@ try:
 
     data = response.json()
 
-    print("\nResponse keys:", list(data.keys()))
-    print("\nSample response:")
-    print(data)
+    print("\nResponse structure:")
+
+    for key, value in data.items():
+        if isinstance(value, list):
+            print(f"\n{key}: {len(value)} records")
+
+            if value and isinstance(value[0], dict):
+                print("First record fields:", list(value[0].keys()))
+
+        elif isinstance(value, dict):
+            print(f"\n{key}: dictionary")
+            print("Fields:", list(value.keys()))
+
+        else:
+            print(f"{key}: {value}")
 
 except requests.RequestException as error:
     print("API request failed:", error)
+
 except ValueError:
     print("The response was not valid JSON.")
