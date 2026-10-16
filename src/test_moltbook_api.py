@@ -1,4 +1,3 @@
-
 import requests
 
 BASE_URL = "https://www.moltbook.com/api/v1"

@@ -1,0 +1,12 @@
+Moltbook Data Cleaning Report
+==============================
+Input records: 75
+Missing IDs: 0
+Duplicate IDs: 0
+Missing titles: 0
+Missing content: 0
+Invalid timestamps: 0
+Output records: 75
+Excluded records: 0
+Deleted-marked records: 0
+Spam-marked records: 0
