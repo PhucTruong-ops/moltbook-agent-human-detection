@@ -1,0 +1,51 @@
+MOLTBOOK DATA QUALITY REPORT
+============================
+
+A. DATASET OVERVIEW
+Input records: 20000
+Valid object records: 20000
+Malformed non-object records: 0
+Unique post IDs: 20000
+Unique non-missing author IDs: 1117
+
+B. MISSING VALUES
+Missing post IDs: 0
+Missing titles: 5
+Missing content: 20
+Missing author IDs: 0
+
+C. DUPLICATES
+Repeated post IDs after first occurrence: 0
+Exact duplicate records: 0
+
+D. TIMESTAMPS
+Invalid or missing timestamps: 0
+Earliest valid timestamp (UTC): 2026-10-16 19:25:21.362000+00:00
+Latest valid timestamp (UTC): 2026-10-23 15:22:27.946000+00:00
+
+E. TEXT STATISTICS (CLEANED OUTPUT)
+Empty content records: 20
+Average content length (characters): 480.91
+Median content length (characters): 500.00
+Maximum content length (characters): 500
+Average content word count: 77.89
+
+F. MODERATION FLAGS
+Records marked is_deleted: 0
+Records marked is_spam: 0
+
+G. CLEANING SUMMARY
+Cleaned output records: 20000
+Excluded records: 0
+Exclusion rule: missing post ID or repeated post ID.
+Other quality issues are flagged rather than automatically removed.
+
+H. OUTPUT FILES
+data/processed/posts_cleaned.csv
+data/processed/cleaning_report.txt
+data/processed/missing_values_by_field.csv
+
+I. RESEARCH LIMITATIONS
+These checks do not establish whether posts were written by humans
+or AI agents. Account verification is not ground truth for authorship.
+Review flags and dataset limitations before modeling.

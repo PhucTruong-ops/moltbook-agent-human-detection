@@ -1,0 +1,15 @@
+Moltbook Account Extraction Report
+==================================
+Posts in input file: 20000
+Malformed post records: 0
+Posts without usable author objects: 0
+Author objects without usable account IDs: 0
+Accounts identified using post author_id fallback: 0
+Unique accounts extracted: 1117
+Output file: data/raw/accounts.json
+
+Notes:
+- Accounts are extracted from author objects embedded in posts.
+- This does not represent every account on Moltbook.
+- Accounts without usable author objects cannot be recovered
+  by this script alone.

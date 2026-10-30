@@ -1,0 +1,18 @@
+Moltbook Comment Collection Report
+==================================
+Unique input posts: 20000
+Posts completed across all runs: 19999
+Posts still failed/pending: 1
+Posts completed in this run: 19999
+Posts with comments in this run: 16099
+Posts returning zero comments in this run: 3900
+Posts failed in this run: 1
+Comment pages fetched in this run: 20559
+Unique comments saved: 73817
+Comments without IDs skipped this run: 0
+Output file: data/raw/comments.json
+Progress file: data/raw/comments_progress.json
+
+Note: zero comments means the API returned no comments for a
+successfully completed post; it does not mean the request failed.
+Posts still marked failed should be retried and investigated.
