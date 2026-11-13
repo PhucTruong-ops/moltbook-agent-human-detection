@@ -64,6 +64,7 @@ CREATE TABLE IF NOT EXISTS comments (
     INDEX idx_comments_parent (parent_comment_id),
     FOREIGN KEY (author_id) REFERENCES accounts(account_id),
     FOREIGN KEY (post_id) REFERENCES posts(post_id),
+    FOREIGN KEY (parent_comment_id) REFERENCES comments(comment_id)
 )ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 
