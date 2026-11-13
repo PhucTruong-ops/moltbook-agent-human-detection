@@ -1,15 +1,25 @@
 Moltbook Account Extraction Report
 ==================================
-Posts in input file: 20000
+Posts examined: 20000
 Malformed post records: 0
-Posts without usable author objects: 0
-Author objects without usable account IDs: 0
-Accounts identified using post author_id fallback: 0
-Unique accounts extracted: 1117
+Posts without embedded author objects: 0
+Comments and nested replies examined: 122336
+Malformed comment records: 0
+
+ACCOUNT RESULTS
+Unique author IDs found in posts: 1117
+Unique author IDs found in comments/replies: 1879
+Unique author IDs across posts and comments: 2104
+Unique account profiles extracted: 2104
+Comment author profiles found: 1879
+Author IDs without an embedded profile: 0
+Records with no usable author ID: 0
 Output file: data/raw/accounts.json
 
 Notes:
-- Accounts are extracted from author objects embedded in posts.
-- This does not represent every account on Moltbook.
-- Accounts without usable author objects cannot be recovered
-  by this script alone.
+- Profiles are extracted from embedded post/comment author objects.
+- Nested replies are traversed recursively.
+- Author IDs without profiles are counted but not converted into
+  fabricated account profiles.
+- This represents accounts observed in the collected dataset,
+  not every account on Moltbook.
